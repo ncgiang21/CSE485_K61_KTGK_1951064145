@@ -1,5 +1,5 @@
 <?php
-    require_once 'src/config/database.php';
+    require_once "./src/config/database.php";
 
     class Duan {
         public $maduan;
@@ -63,7 +63,7 @@
         public function update($duan) {
           
             $connection = $this->connectDb();
-            $queryUpdate = "UPDATE duan SET `tenduan` = '{$duan['tenduan']}', `namthuchien` = '{$duan['namthuchien']}',  `linhvuc' = '{$duan['linhvuc']}'
+            $queryUpdate = "UPDATE duan SET `tenduan` = '{$duan['tenduan']}', `namthuchien` = '{$duan['namthuchien']}',  `linhvuc` = '{$duan['linhvuc']}'
             ,  `nhiemvu` = '{$duan['nhiemvu']}',  `coquanthuchien` = '{$duan['coquanthuchien']}'  WHERE `maduan` = {$duan['maduan']} ";
             $isUpdate = mysqli_query($connection, $queryUpdate);
             $this->closeDb($connection);

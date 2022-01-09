@@ -1,4 +1,8 @@
+<?php 
 
+require_once "./src/views/commons/message.php";
+
+?>
 <a style="text-decoration: none" href="index.php?controller=manage&action=add">
     Thêm mới dự án
 </a> <br></br>
@@ -31,7 +35,6 @@
                     $urlDelete =
                         "index.php?controller=manage&action=delete&maduan=" . $duan['maduan'];
                     ?>
-                    <a style="text-decoration: none" href="<?php echo $urlDetail?>">Chi tiết</a> &nbsp;
                     <a style="text-decoration: none" href="<?php echo $urlEdit?>">Sửa</a> &nbsp;
                     <a style="text-decoration: none" onclick="return confirm('Bạn chắc chắn muốn xóa?')"
                        href="<?php echo $urlDelete?>">
