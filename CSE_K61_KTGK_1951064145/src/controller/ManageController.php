@@ -73,6 +73,7 @@
                 $duanModel = new Duan();
                 
                 $duanArr = [
+                    'maduan' => $maduan,
                     'tenduan' => $tenduan,
                     'namthuchien' => $namthuchien,
                     'linhvuc' => $linhvuc,
